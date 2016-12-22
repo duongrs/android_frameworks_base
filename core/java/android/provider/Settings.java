@@ -1004,6 +1004,8 @@ public final class Settings {
 
     public static final String AUTHORITY = "settings";
 
+    public static final String ETHERNET_ON = "ethernet_on"; //add by FriendlyARM
+
     private static final String TAG = "Settings";
     private static final boolean LOCAL_LOGV = false;
 
@@ -2142,6 +2144,8 @@ public final class Settings {
          */
         public static final String VOLUME_MASTER_MUTE = "volume_master_mute";
 
+        public static final String VOLUME_EXT_SPEAKER = "volume_ext_speaker";
+
         /**
          * Microphone mute (int 1 = mute, 0 = not muted).
          *
@@ -2186,7 +2190,8 @@ public final class Settings {
          */
         public static final String[] VOLUME_SETTINGS = {
             VOLUME_VOICE, VOLUME_SYSTEM, VOLUME_RING, VOLUME_MUSIC,
-            VOLUME_ALARM, VOLUME_NOTIFICATION, VOLUME_BLUETOOTH_SCO
+            VOLUME_ALARM, VOLUME_NOTIFICATION, VOLUME_BLUETOOTH_SCO,
+            "", "", "", VOLUME_EXT_SPEAKER,
         };
 
         /**
@@ -2667,6 +2672,7 @@ public final class Settings {
             VOLUME_ALARM,
             VOLUME_NOTIFICATION,
             VOLUME_BLUETOOTH_SCO,
+            VOLUME_EXT_SPEAKER,
             VOLUME_VOICE + APPEND_FOR_LAST_AUDIBLE,
             VOLUME_SYSTEM + APPEND_FOR_LAST_AUDIBLE,
             VOLUME_RING + APPEND_FOR_LAST_AUDIBLE,
@@ -2674,6 +2680,7 @@ public final class Settings {
             VOLUME_ALARM + APPEND_FOR_LAST_AUDIBLE,
             VOLUME_NOTIFICATION + APPEND_FOR_LAST_AUDIBLE,
             VOLUME_BLUETOOTH_SCO + APPEND_FOR_LAST_AUDIBLE,
+            VOLUME_EXT_SPEAKER + APPEND_FOR_LAST_AUDIBLE,
             TEXT_AUTO_REPLACE,
             TEXT_AUTO_CAPS,
             TEXT_AUTO_PUNCTUATE,
